@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5aa33c4c9c59a25291445d8226153066",
+    "content-hash": "880b087e467b6d547c4ca96d29be27f3",
     "packages": [
         {
             "name": "brick/math",
@@ -2734,6 +2734,63 @@
                 }
             ],
             "time": "2022-03-27T21:42:02+00:00"
+        },
+        {
+            "name": "singlestoredb/singlestoredb-laravel",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/singlestore-labs/singlestoredb-laravel-driver.git",
+                "reference": "05d07cfd7fc3c9975c501d1baa901a8a68dc29fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/singlestore-labs/singlestoredb-laravel-driver/zipball/05d07cfd7fc3c9975c501d1baa901a8a68dc29fd",
+                "reference": "05d07cfd7fc3c9975c501d1baa901a8a68dc29fd",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "^8.0|^9.0",
+                "illuminate/database": "^8.0|^9.0",
+                "illuminate/events": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^8.5.23|^9.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SingleStore\\Laravel\\SingleStoreProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SingleStore\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Francis",
+                    "email": "aarondfrancis@gmail.com"
+                }
+            ],
+            "description": "A SingleStoreDB database driver for Laravel.",
+            "support": {
+                "issues": "https://github.com/singlestore-labs/singlestoredb-laravel-driver/issues",
+                "source": "https://github.com/singlestore-labs/singlestoredb-laravel-driver/tree/main"
+            },
+            "time": "2022-06-30T19:21:01+00:00"
         },
         {
             "name": "symfony/console",
@@ -7753,7 +7810,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "singlestoredb/singlestoredb-laravel": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
